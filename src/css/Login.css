@@ -1,0 +1,47 @@
+.loginForm {
+    width: 400px;
+    margin: 10vh auto;
+    height: 50vh;
+    box-shadow: 5px 5px 5px 5px #C0C0C0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.loginForm h2 {
+    text-align: center;
+    height: 9vh;
+    line-height: 9vh;
+    font-size: 30px;
+    margin-bottom: 1vh;
+}
+
+.loginForm p {
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 14px;
+}
+
+.loginForm input {
+    width: 380px;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.loginForm button {
+    display: block;
+    margin: 5vh auto 2vh;
+    width: 150px;
+    height: 6vh;
+    background-color: #FC9D9D;
+    border: none;
+    border-radius: 10px;
+}
+
+.loginForm a {
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    color: #6088C6;
+}

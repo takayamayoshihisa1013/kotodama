@@ -1,0 +1,23 @@
+#search {
+    width: 100%;
+    margin: 2vh auto;
+}
+
+#search input {
+    width: 88%;
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px 1%;
+    border: #C0C0C0 1px solid;
+}
+
+.searchButton {
+    width: 9%;
+    padding: 5px 1%;
+    height: 38px;
+    vertical-align: top;
+    border-radius: 10px;
+    background-color: #EB8686;
+    border: none;
+}
+

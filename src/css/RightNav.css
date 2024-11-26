@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.rightNav {
+    width: 25vw;
+    padding-top: 50px;
+    border-right: 1px solid;
+    height: calc(83vh - 2px);
+    background-color: #AEC4E5;
+    color: #696969;
+    position: fixed;
+}
+
+.rightNav .rightNavProfile {
+    
+}
+
+.rightNav .rightNavProfile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.rightNav .rightNavProfile .rightNavUserName {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rightNav .rightNavProfile .followAndFollower {
+    width: 65%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 20px;
+}
+
+.rightNav .rightNavProfile .followAndFollower .bold {
+    font-weight: 600;
+}
+
+.rightNav .rightNavNav {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid;
+}
+
+.rightNav .rightNavNav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.rightNav .rightNavNav ul li {
+    height: 50px;
+    line-height: 50px;
+    width: 98%;
+    padding: 0 1%;
+    border-radius: 10px;
+    /* text-shadow: ; */
+}
+
+.rightNav .rightNavNav ul li a {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.rightNav .rightNavNav ul li:hover {
+    background-color: #9bafcc;
+    color: #ffff;
+}
+
+.rightNav .rightNavNav ul li i {
+    width: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+

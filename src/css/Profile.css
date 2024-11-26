@@ -1,0 +1,137 @@
+.content {
+    width: 75vw;
+    margin: 0 auto 0 25vw;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.profile {
+    width: 50vw;
+    /* height: 100vh; */
+    padding-bottom: 20px;
+    /* background-color: ; */
+    box-shadow: #d3d3d3 2px 2px 5px 3px;
+    border-radius: 0 0 10px 10px;
+}
+
+.profile .profileBackground {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+
+.profile .iconAndButton {
+    display: flex;
+}
+
+.profile .iconAndButton p {
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.profile .iconAndButton p .bold {
+    font-weight: 600;
+}
+
+.profile .profileIcon {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: -150px auto 0 20px;
+    display: block;
+}
+
+.profile .iconAndButton .followButton {
+    height: 40px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #FFFF;
+    margin-right: 10px;
+}
+
+.profile .iconAndButton .followState {
+    background-color: #AEC4E5;
+    border: none;
+    color: #696969;
+}
+
+.profile .iconAndButton .profileChat {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.profile .iconAndButton .settingButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+
+.profile .profileName {
+    font-size: 25px;
+    margin: 10px 20px;
+}
+
+.profile .profileText {
+    width: 90%;
+    margin: 0 20px;
+}
+
+.profilePostSection {
+    width: 45vw;
+}
+
+/* .postSection .postList {
+    margin: 0 auto;
+} */
+
+.profilePostSection .postList {
+    width: 45vw;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.profilePostSection .postList .post {
+    width: 98%;
+    margin: 2vh auto;
+    border: 1px solid #dcdcdc;
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: #d3d3d3 2px 2px 5px 3px;
+}
+
+.profilePostSection .postList .post .postUserId {
+    color: gray;
+}
+
+.profilePostSection .postList .post img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profilePostSection .postList .post .postDetail {
+    width: 600px;
+    margin-left: 10px;
+}
+
+.profilePostSection .postList .post .postDetail .postHeader {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.profilePostSection .postList .post .postDetail .postBody {
+    height: 10vh;
+    margin: 1vh auto;
+}

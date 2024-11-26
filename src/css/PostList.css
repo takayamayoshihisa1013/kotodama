@@ -1,0 +1,58 @@
+
+
+.postListPage .postSection {
+    margin: 0 auto 0 25vw;
+    position: relative;
+    
+}
+
+.postListPage .postList {
+    width: 45vw;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.postListPage .postList .post {
+    width: 98%;
+    margin: 2vh auto;
+    border: 1px solid #dcdcdc;
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: #d3d3d3 2px 2px 5px 3px;
+}
+
+.postListPage .postList .post .postUserId {
+    color: gray;
+}
+
+.postListPage .postList .post img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.postListPage .postList .post .postDetail {
+    width: 600px;
+    margin-left: 10px;
+}
+
+.postListPage .postList .post .postDetail .postHeader {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.postListPage .postList .post .postDetail .postBody {
+    min-height: 10vh;
+    margin: 1vh auto;
+}
+
+.postListPage .postList .post .postDetail .postFooter {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    font-size: 17px;
+}
+

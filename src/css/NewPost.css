@@ -1,0 +1,87 @@
+.newPostSection {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.newPostButton {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FC9D9D;
+    border: none;
+    top: 75vh;
+    right: 100px;
+    position: fixed;
+    font-size: 30px;
+    color: #FFFF;
+    z-index: 0;
+}
+
+.newPostSection .formDelete {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    top: -30px;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: #FFFF;
+}
+
+.newPostSection .newPostForm {
+    width: 660px;
+    padding: 1%;
+    background-color: #FFFF;
+    margin: 15vh auto 0 40vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.newPostSection .newPostForm textarea {
+    /* display: none; */
+    width: 98%;
+    padding: 1%;
+    border-radius: 10px;
+    min-width: 98%;
+    min-height: 50vh;
+    max-width: 98%;
+    max-height: 50vh;
+}
+
+.newPostSection .newPostForm .formButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newPostSection .newPostForm .formImageButton {
+    display: none;
+}
+
+
+
+.newPostSection .newPostForm .postButton, .newPostSection .newPostForm .formImageLabel  {
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    display: block;
+    background-color: #FFFF;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.newPostSection .newPostForm .postButton {
+    background-color:#FC9D9D ;
+}
+
+.newPostSection .newPostForm .formImageLabel {
+    background-color: #AAD6EC;
+}
