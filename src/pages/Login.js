@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./../css/Login.css";
+import Config from "../Config";
+import { Link } from 'react-router-dom';
 
 function Login() {
 
@@ -13,7 +15,7 @@ function Login() {
             password: password
         }
         try {
-            const response = await fetch("http://localhost:5000/login", {
+            const response = await fetch(`${Config.azureBackUrl}/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -22,7 +24,6 @@ function Login() {
                 body: JSON.stringify(data),
             })
             // flaskから受け取ったjsonを受け取る
-
             if (response.ok) {
                 const resMessage = await response.json()
                 if (resMessage.state == "success") {
@@ -46,7 +47,7 @@ function Login() {
             <p>パスワード</p>
             <input type="password" onChange={(e) => setPassword(e.target.value)}></input>
             <button type="submit">ログイン</button>
-            <a href="/signup">アカウントをお持ちでない方はこちら</a>
+            <Link to="/signup">アカウントをお持ちでない方はこちら</Link>
         </form>
     )
 }
