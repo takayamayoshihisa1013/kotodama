@@ -31,8 +31,9 @@ function SignUp() {
                 window.location = "/";
                 // alert()
             } else {
-                console.log(response.success);
-                alert(`登録が失敗しました。${response.error}`)
+                const resData = await response.json();
+                // console.log(response.success);
+                alert(`登録が失敗しました。error:${resData.error}`)
             }
         } catch(error) {
             console.error("error:",error)
