@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./../css/SignUp.css";
+import Config from "../Config";
 
 function SignUp() {
     // 初期値
@@ -17,7 +18,7 @@ function SignUp() {
             password:password
         }
         try{
-            const response = await fetch("http://localhost:5000/newUser", {
+            const response = await fetch(`${Config.azureBackUrl}/newUser`, {
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",
