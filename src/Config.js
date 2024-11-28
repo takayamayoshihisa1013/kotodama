@@ -1,4 +1,4 @@
 const config = {
-    azureBackUrl:"http://localhost:5000"
+    azureBackUrl:"hatchpostback-h0fecdbvcsepbed4.japaneast-01.azurewebsites.net"
 }
 export default config;
