@@ -36,7 +36,7 @@ function SignUp() {
                 alert(`登録が失敗しました。error:${resData.error}`)
             }
         } catch (error) {
-            alert(`登録が失敗しました。error:${error.message}`)
+            alert(`エラーが発生しました。error:${error.message}`)
         }
     }
 
