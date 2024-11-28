@@ -14,12 +14,12 @@ function SignUp() {
 
         const data = {
             username: username,
-            email:email,
-            password:password
+            email: email,
+            password: password
         }
-        try{
+        try {
             const response = await fetch(`${Config.azureBackUrl}/newUser`, {
-                method:"POST",
+                method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -35,8 +35,8 @@ function SignUp() {
                 // console.log(response.success);
                 alert(`登録が失敗しました。error:${resData.error}`)
             }
-        } catch(error) {
-            console.error("error:",error)
+        } catch (error) {
+            alert(`登録が失敗しました。error:${error.message}`)
         }
     }
 
@@ -44,20 +44,20 @@ function SignUp() {
         <form className="signUpForm" onSubmit={handleSubmit}>
             <h2>HatchPost</h2>
             <p>ユーザーネーム</p>
-            <input 
-            type="text" 
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}></input>
+            <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}></input>
             <p>メールアドレス</p>
-            <input 
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}></input>
+            <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}></input>
             <p>パスワード</p>
-            <input 
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}></input>
+            <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}></input>
             <button type="submit">ログイン</button>
 
         </form>
