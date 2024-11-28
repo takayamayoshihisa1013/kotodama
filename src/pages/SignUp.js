@@ -32,7 +32,7 @@ function SignUp() {
                 // alert()
             } else {
                 console.log(response.success);
-                alert("登録が失敗しました。")
+                alert(`登録が失敗しました。${response.error}`)
             }
         } catch(error) {
             console.error("error:",error)
