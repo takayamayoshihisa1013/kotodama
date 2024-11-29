@@ -8,6 +8,7 @@ import Login from './pages/Login.js';
 import SignUp from './pages/SignUp.js';
 import RightNav from './pages/RightNav.js';
 import Post from './pages/Post.js';
+import Config from './Config.js';
 
 function RightNavWrapper() {
   // useLocation()はRouterコンポーネントの中で使わな居行けないので新しく
@@ -36,7 +37,7 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/test">test</Link>
+              <Link to={`${Config.azureBackUrl}/test`}>test</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>
